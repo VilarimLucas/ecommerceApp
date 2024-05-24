@@ -12,7 +12,7 @@ using api_rest.Data;
 namespace api_rest.Migrations
 {
     [DbContext(typeof(EcommerceSystemDbContext))]
-    [Migration("20240519232403_InitialDB")]
+    [Migration("20240522180157_InitialDB")]
     partial class InitialDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -101,11 +101,11 @@ namespace api_rest.Migrations
 
                     b.Property<string>("ProductDescription")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("ProductDetails")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("ProductImage")
                         .IsRequired()
