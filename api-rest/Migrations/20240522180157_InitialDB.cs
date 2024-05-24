@@ -51,10 +51,10 @@ namespace api_rest.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ProductName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    ProductDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ProductDescription = table.Column<string>(type: "TEXT", nullable: false),
                     ProductSize = table.Column<float>(type: "real", nullable: false),
                     ProductColor = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
-                    ProductDetails = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ProductDetails = table.Column<string>(type: "TEXT", nullable: false),
                     ProductPrice = table.Column<float>(type: "real", nullable: false),
                     ProductImage = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
